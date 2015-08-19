@@ -15,6 +15,9 @@
   <?php if( $site->environment() == 'production' ) : ?>
   	<?php $font = '//use.typekit.net/wmj0ilf.js'; ?>
   <?php endif ?>
+  <?php if( $site->environment() == 'localhost' ) : ?>
+  	<?php echo css('assets/fonts/fonts.css') ?>
+  <?php endif ?>
   <?php if( $font ) : ?>
   	<script src="<?php echo $font ?>"></script>
   <?php endif ?>
