@@ -36,6 +36,9 @@ role:
   type: select
   required: true
   width: 1/2
+phone:
+  label: Phone
+  type: tel
 address:
   label: Address
   type: text
