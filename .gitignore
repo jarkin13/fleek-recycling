@@ -33,8 +33,8 @@ assets/fonts/ProximaNova-Bold.otf
 
 assets/fonts/ProximaNova-Black.otf
 
-content/site.txt
-
 *.sublime-workspace
 
 site/accounts/
+
+content/
