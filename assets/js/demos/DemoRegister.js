@@ -89,7 +89,7 @@
               var message = errorResponse.message + ' ' + loginResponse.message;
               if( !loginResponse.error ) {
                 $('.nav-link').hide();
-                $('.navmenu').append('<a href="submit/logout">Logout</a>');
+                $('.login-action').append('<a href="submit/logout" class="nav-link">Logout</a>');
               }
               $('.schedule-form').prepend('<input type="hidden" id="schedule-username" value="' + user.username + '">');
               $('.register-head-response').html(message);
