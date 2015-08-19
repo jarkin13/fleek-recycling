@@ -27,12 +27,6 @@
   }
   
   p.register = function() {
-    var registerLink = 'submit/register',
-        loginLink = 'submit/login';
-    if( environment !== 'localhost') {
-      registerLink = '/' + registerLink;
-      loginLink = '/' + loginLink;
-    }
     $(document).on('click', '#register', function(event){
       if(event.preventDefault) {
         event.preventDefault();
@@ -83,14 +77,14 @@
         $('.modal .register-response').show();
         $('.modal .register-response').html(errorMessage);
       } else {
-        $.post(registerLink, user, function(response){
+        $.post('/submit/register', user, function(response){
           var errorResponse = $.parseJSON(response);
           if( errorResponse.error ) {
             $('.modal .register-response').show();
             $('.modal .register-response').html(errorResponse.message);
           } else {
             $('.modal').modal('hide');
-            $.post(loginLink, user, function(login){
+            $.post('/submit/login', user, function(login){
               var loginResponse = $.parseJSON(login);
               var message = errorResponse.message + ' ' + loginResponse.message;
               if( !loginResponse.error ) {

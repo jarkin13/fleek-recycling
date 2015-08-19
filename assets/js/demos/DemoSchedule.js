@@ -161,10 +161,6 @@
   
   p.schedule = function() {
     var p = this;
-    var scheduleLink = 'submit/schedule';
-    if( environment !== 'localhost' ) {
-      scheduleLink = '/' + scheduleLink;
-    }
     $(document).on('click', '#schedule', function(event){
       if(event.preventDefault) {
         event.preventDefault();
@@ -197,7 +193,7 @@
           $('.schedule-response').show();
           $('.schedule-response').html('Please do not leave the following blank.');
         } else {
-          $.post(scheduleLink, pickup, function(response) {
+          $.post('/submit/schedule', pickup, function(response) {
             var errorResponse = $.parseJSON(response);
             console.log(errorResponse);
             $('.schedule-response').show();

@@ -26,14 +26,6 @@
 
   p.login = function() {
     var p = this;
-    var home, 
-        loginLink = 'submit/login';
-    if( environment == 'localhost' ) {
-      home = '/fleek-recycling';
-    } else {
-      home = '/';
-      loginLink = '/' + loginLink;
-    }
     $(document).on('click', '#submit-login', function(event){
       if(event.preventDefault) {
         event.preventDefault();
@@ -53,10 +45,10 @@
         $('.login-response').show();
         $('.login-response').html('Please do not leave the following blank');
       } else {
-        $.post(loginLink, user, function(response){
+        $.post('/submit/login', user, function(response){
           var errorResponse = $.parseJSON(response);
           if( errorResponse.error == false ) {
-            document.location.href = home;
+            document.location.href = '/';
           } else {
             $('.login-form').find('.form-group').addClass('has-error');
             $('.login-response').show();
