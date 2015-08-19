@@ -1,0 +1,21 @@
+Title: Fleek Recycling
+
+----
+
+Author: Jamie Arkin
+
+----
+
+Description: 
+
+----
+
+Keywords: recycling,fleek,wasteless
+
+----
+
+Copyright: © (date: Year) (link: http://fleekrecycling.com text: Fleek Recycling)
+
+----
+
+Environment: localhost

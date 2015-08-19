@@ -1,0 +1,27 @@
+Title: Home
+
+----
+
+Text: Let us pick up your recycling whenever and wherever in NYC.
+
+----
+
+Steps: 
+
+IT'S EASY -
+1. Get together your cans, plastic & glass bottles in a bag
+2. Fill out the form 
+3. Wait for a email or text confirming your pickup
+4. We take care of the rest
+
+----
+
+Slogan: RECYCLING + SAME DAY PICK UP + BOTTLES + GLASS + CANS
+
+----
+
+Helptext: Schedule your first pick up today. Totally free of charge
+
+----
+
+Pagetitle: Hey, Welcome to FleekRecycling!

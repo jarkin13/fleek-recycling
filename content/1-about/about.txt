@@ -1,0 +1,35 @@
+Title: About
+
+----
+
+Text: Our mission is to decrease waste and increase recycling in NYC. FleekRecycling simply picks ups your recycling at your door. We offer same-day pick up at no cost.
+
+----
+
+Steps: 
+
+IT'S EASY -
+1. Get together your cans, plastic & glass bottles in a bag
+2. (link: schedules text: Schedule) a pick up
+3. Wait for a email or text confirming your pickup
+4. We take care of the rest
+
+----
+
+Slogan: Help us, help you clean NYC!
+
+----
+
+Helptext: *Pick-up depends on availability
+
+----
+
+Pagetitle: Help us, help you recycle.
+
+----
+
+Missiontext: 
+
+FleekRecycling's mission is to inform people about recycling and to help NYC recycling more and more efficiently.  Our free services provides recycling resources and reliability of same day pick up at your door making it easy for any New Yorker who has limited amount of time. With FleekRecycling you will know your recycling is being recycled.  We want to set a new standard for how we recycle in NYC. Help us, help you recycle.
+
+For more information email us at (email: hello@fleekrecycling.com text: hello@fleekrecycling.com)
