@@ -8,25 +8,6 @@ Email:  jamielaurenarkin@gmail.com
 
 */
 
-/*@font-face {
-  font-family: "proxima-nova";
-  src: url(../fonts/ProximaNova-Regular.otf) format("opentype");
-}
-
-@font-face {
-  font-family: "proxima-nova";
-  font-weight: 300;
-  src: url(../fonts/ProximaNova-Light.otf) format("opentype");
-}
-
-@font-face {
-  font-family: "proxima-nova";
-  font-weight: 600;
-  src: url(../fonts/ProximaNova-Semibold.otf) format("opentype");
-}
-*/
-
-
 /* Reset
 -------------------------------------------------- */
 *, *:before, *:after {
@@ -81,7 +62,6 @@ html, body {
 }
 
 html {
-  font-family: "proxima-nova", sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -89,6 +69,7 @@ html {
 body {
   background: #f2f2f2;
   color: #222;
+  font-family: "proxima-nova", sans-serif;
   padding: 30px 0;
 }
 
