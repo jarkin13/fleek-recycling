@@ -1,0 +1,586 @@
+/*
+
+Kirby Starterkit
+
+Author: Jamie Arkin
+URL:    http://fleekrecycling.com
+Email:  jamielaurenarkin@gmail.com
+
+*/
+
+/*@font-face {
+  font-family: "proxima-nova";
+  src: url(../fonts/ProximaNova-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  font-weight: 300;
+  src: url(../fonts/ProximaNova-Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  font-weight: 600;
+  src: url(../fonts/ProximaNova-Semibold.otf) format("opentype");
+}
+*/
+
+
+/* Reset
+-------------------------------------------------- */
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+
+/* Pix
+-------------------------------------------------- */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* Links
+-------------------------------------------------- */
+a {
+  color: #197f3b;
+  text-decoration: none;
+  transition: color .3s, background .3s, border .3s;
+}
+
+a:hover {
+  color: #197f3b;
+  text-decoration: none;
+}
+
+
+/* Clearfix
+-------------------------------------------------- */
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Site
+-------------------------------------------------- */
+html, body {
+  height: 100%;
+}
+
+html {
+  font-family: "proxima-nova", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  background: #f2f2f2;
+  color: #222;
+  padding: 30px 0;
+}
+
+/* Header
+-------------------------------------------------- */
+.header {
+  margin-bottom: 20px;
+  position: relative;
+}
+.toggle-menu {
+  background: transparent;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -32.5px;
+  font-size: 25px;
+}
+.toggle-menu:focus,
+.toggle-menu:active {
+  outline: 0;
+}
+.login-action a {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  margin-top: -23px;
+  text-transform: uppercase;
+  color: rgba(0,0,0,.65);
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+.login-action a:hover { 
+  color: #000;
+}
+.logo {
+  display: block;
+  margin-bottom: .8em;
+  width: 20em;
+}
+
+@media( min-width: 762px ) {
+  .login-action a { display: block; }
+}
+
+
+/* Navigation
+-------------------------------------------------- */
+.navmenu {
+  background: #222;
+  font-size: 13px;
+}
+
+.navhead {
+  clear: both;
+  width: 100%;
+}
+
+.navhead .close-btn {
+  background: transparent;
+  color: #777;
+  cursor: pointer;
+  font-size: 26px;
+  float: right;
+  padding-right: 1em;
+  padding-top: .8em;
+}
+
+.navhead .close-btn:hover {
+  color: #5cb85c;
+  outline: 0;
+}
+
+.navmenu > a { 
+  border: 0; 
+  color: #777;
+  font-weight: 600;
+  padding: 6px 1.5em;
+  text-transform: uppercase;
+}
+
+.navmenu > a:hover {
+  color: #fff;
+  background: transparent;
+}
+
+.navmenu .nav-link-btn {
+  border: 0;
+  background: transparent;
+  color: #777;
+  display: block;
+  font-size: 1.1em;
+  font-weight: 600;
+  padding: 6px 1.5em;
+  text-align: left;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.navmenu .nav-link-btn:hover { 
+  color: #fff;
+  outline: 0;
+}
+
+.navmenu .nav-link-btn:active,
+.navmenu .nav-link-btn:focus { outline: 0; }
+
+.navmenu .btn {
+  color: #222;
+  border: 2px solid #fff;
+  float: left;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 12px 22px;
+  margin: 15px 1.5em;
+}
+
+.navmenu .btn:hover {
+  color: #fff;
+  background: #222;
+}
+
+@media (min-width: 0) {
+  .navbar-toggle {
+    display: block; /* force showing the toggle */
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    right: auto;
+    background: none;
+    border: none;
+  }
+}
+
+
+/* Headings
+-------------------------------------------------- */
+h1 {
+  font-size: 25px;
+  line-height: 1.25em;
+  font-weight: 400;
+  margin-bottom: .5em;
+}
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+h4 {
+  font-size: 16px;
+}
+
+h1 a, h2 a, h3 a, h4 a {
+  color: inherit;
+  border: 0 !important;
+}
+
+/* Main
+-------------------------------------------------- */
+.main {
+  padding-bottom: 1.5em;
+  border-bottom: 2px solid red;
+}
+.main hr {
+  margin: 3em 0;
+  height: 2px;
+  background: #ddd;
+}
+
+.main a:hover {
+  border-color: #222;
+}
+
+/* Text blocks */
+.text ul,
+.text ol {
+  margin-left: 1em;
+}
+
+/* Page
+-------------------------------------------------- */
+.page-header {
+  background-position: center bottom;
+  background-size: cover;
+  height: 300px;
+  position: absolute;
+  width: 100%;
+  top: -40px;
+  z-index: -1;
+}
+
+.page-header h1 {
+  text-align: center;
+  padding-top: 110px;
+  font-size: 45px;
+  font-weight: 100;
+}
+
+.page-header-container {
+  margin-top: 200px;
+}
+
+hr {
+  border-color: #d9d9d9;
+}
+
+.slogan { 
+  font-size: 1.8em; 
+  font-weight: 100; 
+}
+
+.action-link { 
+  text-transform: uppercase;
+  display: block;
+  cursor: pointer;
+  padding: 10px 0;
+  text-align: right; 
+} 
+
+.center {
+  text-align: center;
+}
+
+@media( min-width: 762px) {
+  .slogan { margin-bottom: 20px; }
+}
+
+@media( min-width: 992px ) {
+  .slogan { font-size: 2.1em; }
+}
+
+@media( min-width: 1200px) {
+  .slogan { font-size: 2.5em; }
+}
+
+/* Home
+-------------------------------------------------- */
+.home .content-row {
+  border-bottom: 1px solid #999;
+}
+
+.home .headline {
+  margin-bottom: 25px;
+}
+
+.home .content { 
+  font-size: 18px;
+  font-weight: 100; 
+}
+
+.home .keywords {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.home .help-block {
+  color: #aaa;
+  font-size: 13px;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+
+.home .steps {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.home-photo.mobile {
+  background-image: url('../images/home-image.png');
+  background-size: cover;
+  height: 230px;
+  margin-top: -60px;
+}
+  
+@media( min-width: 762px ) {
+  .home-photo.mobile {
+    background-image: none;
+    height: 0;
+  }
+
+  .home-photo {
+    background-image: url('../images/home-image.png');
+    background-position: right bottom;
+    background-size: cover;
+    height: 580px;
+  }
+
+  .home .content { 
+    position: absolute;
+    top: 150px;
+  }
+  
+  .home .slogan { 
+    float: left;
+    font-size: 25px; 
+  }
+}
+
+@media( min-width: 1200px ) {
+  .home-photo {
+    height: 700px;
+  }
+}
+
+/* Login
+-------------------------------------------------- */
+
+/* About
+-------------------------------------------------- */
+.page-header.about-header {
+  background-image: url('../images/about-head.png');
+  background-position: left bottom;
+}
+
+.about .content {
+  font-size: 20px;
+}
+
+.about .help-block {
+  font-size: 10px;
+}
+
+.separator hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/* Button
+-------------------------------------------------- */
+.action-btn,
+.login-btn,
+.register-btn { display: none; }
+
+.action-btn.mobile,
+.login-btn.mobile,
+.register-btn.mobile { display: block; }
+
+.action-btn.mobile .btn,
+.login-btn.mobile .btn,
+.register-btn.mobile .btn {
+  margin: 20px 0;
+  width: 100%;
+}
+
+@media(min-width: 762px) {
+  .action-btn,
+  .login-btn,
+  .register-btn { 
+    display: block;
+    float: right; 
+    margin: 0; 
+  }
+  
+  .action-btn.mobile,
+  .login-btn.mobile,
+  .register-btn.mobile { display: none; }
+}
+
+@media(min-width: 992px) {
+  .action-btn,
+  .login-btn,
+  .register-btn { margin-top: 4.5px; }
+}
+
+@media(min-width: 1200px) {
+  .action-btn,
+  .login-btn,
+  .register-btn { margin-top: 10px; }
+}
+
+/* Response
+-------------------------------------------------- */
+.time-optional { display: none; }
+
+.response {
+  color: #a94442;
+  display: none;
+}
+
+.response.success {
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.error-message {
+  color: #a94442;
+}
+
+/* Forms
+-------------------------------------------------- */
+.form-header {
+  padding: 30px 15px 10px;
+}
+.main-form .datetime {
+  width: 100%;
+}
+
+.schedule-form {
+  padding: 15px;
+}
+
+/* Fields
+-------------------------------------------------- */
+.control-label {
+  font-weight: 100;
+}
+
+.pac-container { z-index: 999999; }
+
+/* Other
+-------------------------------------------------- */
+.email-address {
+  text-decoration: underline;
+}
+
+/* Buttons
+-------------------------------------------------- */
+.btn {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.btn-dark {
+  background: #222;
+  color: #fff;
+}
+
+.no-radius {
+  -webkit-border-radius: 0; 
+  -moz-border-radius: 0; 
+  border-radius: 0;
+}
+
+.button-group .btn {
+  margin-right: 20px;
+}
+
+/* Links
+-------------------------------------------------- */
+.link {
+  color: #222;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.link:hover { text-decoration: underline; }
+
+/* Next/Prev nav
+-------------------------------------------------- */
+.nextprev {
+  padding: 1em 0;
+}
+.nextprev a {
+  border: 0;
+}
+.nextprev .prev {
+  float: left;
+}
+.nextprev .next {
+  float: right;
+}
+
+
+/* Footer
+-------------------------------------------------- */
+.footer {
+  margin: 20px 0;
+  font-size: .8em;
+}
+.copyright {
+  float: left;
+}
+.colophon {
+  float: right;
+}
+.colophon a b {
+  color: red;
+  padding-left: .25em;
+}
+.fa-leaf { color: #197f3b; }
