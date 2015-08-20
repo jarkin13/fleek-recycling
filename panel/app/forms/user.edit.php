@@ -36,7 +36,7 @@ role:
   type: select
   required: true
   width: 1/2
-phone:
+tel:
   label: Phone
   type: tel
 address:

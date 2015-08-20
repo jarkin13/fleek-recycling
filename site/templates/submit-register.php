@@ -11,7 +11,7 @@ $newuser = array(
 	'city' => $_POST['city'],
 	'state' => $_POST['state'],
 	'zip' => $_POST['zip'],
-	'phone' => $_POST['phone'],
+	'tel' => $_POST['phone'],
 	'contact' => $_POST['contact']
 );
 
