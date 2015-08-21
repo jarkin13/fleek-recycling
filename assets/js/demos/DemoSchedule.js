@@ -46,8 +46,8 @@
         var end = m.clone().hour(21).minute(30).second(1);
         return m.isAfter(start) && m.isBefore(end);
       },
-      timeFormat: 'h:mm a',
-      inputFormat: 'h:mm a'
+      timeFormat: 'h:mma',
+      inputFormat: 'h:mma'
     };
     
     var timepicker = rome(time, timeOptions);
