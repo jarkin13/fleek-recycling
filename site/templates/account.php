@@ -11,7 +11,7 @@
 									<div class="row">
 										<div class="col-sm-12">
 											<h4><?php echo $date->title() ?></h4>
-											
+											<p><?php echo $client->time() ?> - <?php echo $client->time2() ?></p>
 										</div>
 									</div>
 								<?php endif;
