@@ -225,7 +225,7 @@
       response.fields.time2 = $('#time2');
       response.fields.notes = $('#notes');
     } 
-    
+     
     return response;
   }
   

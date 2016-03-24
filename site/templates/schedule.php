@@ -105,7 +105,7 @@
 								</div>
 			    			<div class="form-group">
 									<button type="submit" id="schedule" class="btn btn-success"><i class="fa fa-leaf"></i> Recycle</button> 
-								</div>
+								</div> 
 			    		</form>
 			    	</div>
 			    </div>
