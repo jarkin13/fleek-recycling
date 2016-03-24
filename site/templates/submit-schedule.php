@@ -1,5 +1,6 @@
 <?php
 $username = $_POST['username'];
+$id = $_POST['id'];
 $date = $_POST['date'];
 $doorman = $_POST['doorman'];
 $timefrom = $_POST['timefrom'];
@@ -33,6 +34,7 @@ try {
 	$newPickup = page('schedules/'. $slug)->children()->create($username, 'pickup', array(
 		'title' => 'Pickup for ' . $user->firstName() . ' ' . $user->lastName(),
 		'user' => $username,
+		'ID' => $id,
 		'date' => $date,
 		'doorman' => $doorman,
 		'time' => $timefrom,

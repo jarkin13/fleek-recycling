@@ -175,6 +175,7 @@
         var date = moment($('#date').val()).format('MMMM Do YYYY');
         var slug = moment($('#date').val()).format('YYYYMMDD');
         var pickup = {
+          id: Math.floor(Math.random() * 26) + Date.now(),
           username: $('#schedule-username').val(),
           slug: slug,
           date: date,
@@ -218,10 +219,11 @@
       response.fields.date = $('#date');
     }
     
-    if( !data.allday && !data.doorman && !data.timeto && !data.timefrom ) {
+    if( !data.allday && !data.doorman && !data.timeto && !data.timefrom && !data.notes ) {
       response.error = true;
       response.fields.time = $('#time');
       response.fields.time2 = $('#time2');
+      response.fields.notes = $('#notes');
     } 
     
     return response;

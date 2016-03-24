@@ -19,7 +19,8 @@
 		'assets/js/App.js',
 		'assets/js/demos/DemoRegister.js',
 		'assets/js/demos/DemoSchedule.js',
-		'assets/js/demos/DemoLogin.js'
+		'assets/js/demos/DemoLogin.js',
+		'assets/js/demos/DemoAccount.js'
 	)) ?>
 </body>
 </html>

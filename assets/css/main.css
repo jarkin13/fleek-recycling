@@ -483,6 +483,16 @@ hr {
   padding: 15px 0;
 }
 
+.has-error .form-control::-moz-placeholder {
+  color: #a94442;
+}
+.has-error .form-control:-ms-input-placeholder {
+  color: #a94442;
+}
+.has-error .form-control::-webkit-input-placeholder {
+  color: #a94442;
+}
+
 /* Fields
 -------------------------------------------------- */
 .control-label {

@@ -6,9 +6,16 @@ fields:
 	title:
 		label: Pickup
 		type: text
+	id:
+		label: ID
+		type: text
+		readonly: true
+		width: 1/2
 	user:
 		label: User
 		type: user
+		readonly: true
+		width: 1/2
 	date:
 		label: Date
 		type: date
