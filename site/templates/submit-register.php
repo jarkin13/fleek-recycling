@@ -21,7 +21,7 @@ $userTaken = $site->users()->findBy('username', $_POST['username']);
 $response = array(
 	'error' => false,
 	'message' => ''
-);
+); 
 
 if( !empty($emailTaken) ) {
 	$response['error'] = true;
