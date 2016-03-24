@@ -10,3 +10,7 @@ content/
 *.sublime-workspace
 
 *.txt
+
+content/schedules/20150809/default.txt
+
+content/schedules/20150809/jarkin-fleekrecycling/pickup.txt
